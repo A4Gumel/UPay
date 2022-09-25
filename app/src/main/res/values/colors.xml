@@ -15,4 +15,13 @@
     <color name="bg_color">#F6F8FC</color>#
 
     <color name="textColor">#20272B</color>
+
+
+    <color name="yellow1">#FFF9C4</color>
+    <color name="yellow2">#FFF59D</color>
+    <color name="yellow3">#FFF176</color>
+    <color name="yellow4">#FFEE58</color>
+    <color name="yellow5">#FFEB3B</color>
+    <color name="yellow6">#FDD835</color>
+
 </resources>

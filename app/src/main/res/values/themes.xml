@@ -46,8 +46,20 @@
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textStyle">bold</item>
         <item name="textAllCaps">false</item>
-        <item name="android:textSize">14sp</item>
         <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxBackgroundColor">@color/yellow2</item>
+        <item name="boxStrokeColor">@color/orange_1</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="colorControlNormal">@color/yellow2</item>
+        <item name="backgroundColor">@color/yellow2</item>
+        <item name="backgroundTint">@color/yellow2</item>
     </style>
 
 </resources>

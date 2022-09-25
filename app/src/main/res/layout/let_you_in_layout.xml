@@ -73,9 +73,9 @@
         android:layout_height="wrap_content">
 
         <View
-            android:layout_width="48dp"
+            android:layout_width="160dp"
             android:layout_height="1dp"
-            android:alpha="0.8"
+            android:alpha="0.6"
             android:background="@color/textColor"
             android:layout_marginEnd="@dimen/small_margin"
             android:backgroundTint="@color/textColor"/>
@@ -87,10 +87,10 @@
             android:text="@string/or"/>
 
         <View
-            android:layout_width="48dp"
+            android:layout_width="160dp"
             android:layout_height="1dp"
             android:layout_marginStart="@dimen/small_margin"
-            android:alpha="0.8"
+            android:alpha="0.6"
             android:background="@color/textColor"
             android:backgroundTint="@color/textColor"/>
     </LinearLayout>
@@ -99,7 +99,7 @@
         android:id="@+id/nextBtn"
         android:text="@string/sign_in_with_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         style="@style/UpayButtonStyle" />
 
     <LinearLayout
