@@ -39,7 +39,4 @@ dependencies {
     //Android 12 Splash Screen
     implementation 'androidx.core:core-splashscreen:1.0.0'
 
-    //OTP Pin View
-    implementation 'com.github.mukeshsolanki:android-otpview-pinview:3.0.0'
-
 }

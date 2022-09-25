@@ -33,4 +33,5 @@
     <string name="_8">8</string>
     <string name="_7">7</string>
     <string name="_0">0</string>
+    <string name="create_new_password">Create new password</string>
 </resources>

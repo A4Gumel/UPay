@@ -67,6 +67,7 @@
         <item name="cornerRadius">24dp</item>
         <item name="rippleColor">@color/orange_1</item>
         <item name="backgroundTint">@color/white</item>
+        <item name="fontFamily">@font/urbanist_bold</item>
         <item name="android:textStyle">bold</item>
     </style>
 
