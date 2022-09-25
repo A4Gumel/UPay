@@ -62,4 +62,12 @@
         <item name="backgroundTint">@color/yellow2</item>
     </style>
 
+    <style name="KeyboardInputTextStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">34sp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="rippleColor">@color/orange_1</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
