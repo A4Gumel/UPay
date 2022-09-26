@@ -35,4 +35,7 @@
     <string name="_0">0</string>
     <string name="create_new_password">Create new password</string>
     <string name="successful">Successful</string>
+    <string name="reason_for_using_upay">Reason for using Upay</string>
+    <string name="reason_info">We want to provide the best experience according to your needs.</string>
+    <string name="skip">Skip</string>
 </resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="8"
+            android:fontFamily="@font/urbanist_regular"
+            tools:text="Spend or save daily"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/reasonSelected"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

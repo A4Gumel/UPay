@@ -71,4 +71,16 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="SetupTitleStyle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/urbanist_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="SetupSubtitleStyle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/urbanist_regular</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
 </resources>
