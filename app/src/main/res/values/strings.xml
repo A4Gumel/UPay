@@ -38,4 +38,8 @@
     <string name="reason_for_using_upay">Reason for using Upay</string>
     <string name="reason_info">We want to provide the best experience according to your needs.</string>
     <string name="skip">Skip</string>
+    <string name="let_verify_your_identity">Let\'s Verify Your Identity</string>
+    <string name="verify_identity_info">We are required to verify your identity before you can use
+        the service. Your information will be encrypted and stored securely.</string>
+    <string name="verify_identity">Verify Identity</string>
 </resources>

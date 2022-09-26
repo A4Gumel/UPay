@@ -32,6 +32,7 @@
         <item name="backgroundTint">@color/orange_1</item>
         <item name="android:layout_margin">16dp</item>
         <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/urbanist_regular</item>
         <item name="textAllCaps">false</item>
         <item name="android:backgroundTint">@color/orange_1</item>
     </style>
