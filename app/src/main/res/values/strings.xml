@@ -42,4 +42,5 @@
     <string name="verify_identity_info">We are required to verify your identity before you can use
         the service. Your information will be encrypted and stored securely.</string>
     <string name="verify_identity">Verify Identity</string>
+    <string name="change">Change</string>
 </resources>
