@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UPay</string>
+    <string name="next">Next</string>
+    <string name="on_boarding_image">on boarding image</string>
 </resources>

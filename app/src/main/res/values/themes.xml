@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.UPay" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/orange_1</item>
+        <item name="colorPrimaryVariant">@color/orange_2</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/white</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
     </style>
@@ -19,6 +19,26 @@
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
         <item name="windowSplashScreenBackground">@color/white</item>
         <item name="postSplashScreenTheme">@style/Theme.UPay</item>
+    </style>
+
+    <style name="UpayButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="elevation">4dp</item>
+        <item name="elevationOverlayColor">@color/orange_2</item>
+        <item name="colorButtonNormal">@color/orange_1</item>
+        <item name="elevationOverlayAccentColor">@color/orange_1</item>
+        <item name="rippleColor">@color/orange_2</item>
+        <item name="backgroundTint">@color/orange_1</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/orange_1</item>
+    </style>
+
+    <style name="OnBoardingTextStyle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

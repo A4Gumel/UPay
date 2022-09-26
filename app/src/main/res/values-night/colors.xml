@@ -12,7 +12,5 @@
     <color name="orange_2">#EFA407</color>
     <color name="blue_1">#246BFD</color>
     <color name="blue_2">#6F9EFF</color>
-    <color name="bg_color">#F6F8FC</color>#
-
-    <color name="textColor">#FFFFFFFF</color>
+    <color name="bg_color">#F6F8FC</color>
 </resources>
