@@ -49,4 +49,8 @@
     <string name="choose_verification_method">Choose verification method</string>
     <string name="photo_id_card">Photo ID Card</string>
     <string name="photo_id_info">Please point the camera at the ID Card</string>
+    <string name="selfie_with_id_card">Selfie with ID Card</string>
+    <string name="selfie_with_id_card_info">Please look at the Camera and hold still</string>
+    <string name="submit">Submit</string>
+    <string name="retake">Retake</string>
 </resources>
