@@ -61,6 +61,7 @@
         <item name="colorControlNormal">@color/yellow2</item>
         <item name="backgroundColor">@color/yellow2</item>
         <item name="backgroundTint">@color/yellow2</item>
+        <item name="fontFamily">@font/urbanist_medium</item>
     </style>
 
     <style name="KeyboardInputTextStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">

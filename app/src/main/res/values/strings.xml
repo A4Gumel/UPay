@@ -53,4 +53,7 @@
     <string name="selfie_with_id_card_info">Please look at the Camera and hold still</string>
     <string name="submit">Submit</string>
     <string name="retake">Retake</string>
+    <string name="fill_your_profile">Fill Your Profile</string>
+    <string name="fill_your_profile_info">Don\'t worry you can change it later</string>
+    <string name="full_name">Full Name</string>
 </resources>
