@@ -23,7 +23,7 @@
 
     <style name="UpayButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="cornerRadius">24dp</item>
-        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColor">@color/white</item>
         <item name="elevation">4dp</item>
         <item name="elevationOverlayColor">@color/orange_2</item>
         <item name="colorButtonNormal">@color/orange_1</item>
@@ -38,7 +38,28 @@
 
     <style name="OnBoardingTextStyle" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColor</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SocialMediaLoginStyle" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxBackgroundColor">@color/yellow2</item>
+        <item name="boxStrokeColor">@color/orange_1</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="colorControlNormal">@color/yellow2</item>
+        <item name="backgroundColor">@color/yellow2</item>
+        <item name="backgroundTint">@color/yellow2</item>
     </style>
 
 </resources>
