@@ -47,4 +47,6 @@
     <string name="proof_of_residency_info">Select your Country of residence and choose method of identification</string>
     <string name="nationality">Nationality</string>
     <string name="choose_verification_method">Choose verification method</string>
+    <string name="photo_id_card">Photo ID Card</string>
+    <string name="photo_id_info">Please point the camera at the ID Card</string>
 </resources>
