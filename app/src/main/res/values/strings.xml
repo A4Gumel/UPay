@@ -58,4 +58,6 @@
     <string name="full_name">Full Name</string>
     <string name="username">Username</string>
     <string name="phone_number">Phone number</string>
+    <string name="create_new_pin">Create New Pin</string>
+    <string name="new_pin_info">Add a Pin to make your account more secured.</string>
 </resources>
