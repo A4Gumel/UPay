@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--    hard code background color value to force it even in light mode-->
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -103,6 +103,55 @@
                 android:textSize="16sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_marginTop="8dp"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/orange_1"
+            android:textColorHint="@color/textColor"
+            style="@style/TextInputStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/countryCodePickerTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:layout_marginTop="8dp"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/orange_1"
+            app:endIconDrawable="@drawable/ic_email"
+            app:endIconTint="@color/orange_1"
+            app:endIconMode="custom"
+            android:textColorHint="@color/textColor"
+            style="@style/TextInputStyle">
+
+<!--            To change drawables later-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/countryCodePickerEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
 
     </LinearLayout>
