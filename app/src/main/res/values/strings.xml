@@ -35,4 +35,35 @@
     <string name="_0">0</string>
     <string name="create_new_password">Create new password</string>
     <string name="successful">Successful</string>
+    <string name="reason_for_using_upay">Reason for using Upay</string>
+    <string name="reason_info">We want to provide the best experience according to your needs.</string>
+    <string name="skip">Skip</string>
+    <string name="let_verify_your_identity">Let\'s Verify Your Identity</string>
+    <string name="verify_identity_info">We are required to verify your identity before you can use
+        the service. Your information will be encrypted and stored securely.</string>
+    <string name="verify_identity">Verify Identity</string>
+    <string name="change">Change</string>
+    <string name="proof_of_residency">Proof of Residency</string>
+    <string name="proof_of_residency_info">Select your Country of residence and choose method of identification</string>
+    <string name="nationality">Nationality</string>
+    <string name="choose_verification_method">Choose verification method</string>
+    <string name="photo_id_card">Photo ID Card</string>
+    <string name="photo_id_info">Please point the camera at the ID Card</string>
+    <string name="selfie_with_id_card">Selfie with ID Card</string>
+    <string name="selfie_with_id_card_info">Please look at the Camera and hold still</string>
+    <string name="submit">Submit</string>
+    <string name="retake">Retake</string>
+    <string name="fill_your_profile">Fill Your Profile</string>
+    <string name="fill_your_profile_info">Don\'t worry you can change it later</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone number</string>
+    <string name="create_new_pin">Create New Pin</string>
+    <string name="new_pin_info">Add a Pin to make your account more secured.</string>
+    <string name="set_your_fingerprint">Set Your Fingerprint</string>
+    <string name="set_fingerprint_info">Add a Fingerprint to make your account more secured.</string>
+    <string name="set_fingerprint_info_2">Please click on Continue to get started.</string>
+    <string name="face_recognition">Face Recognition</string>
+    <string name="face_recognition_info">Add Face Recognition to make your account more secured.</string>
+    <string name="verifying_your_face">Verifying your face</string>
 </resources>

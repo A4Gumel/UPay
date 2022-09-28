@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    hard code background color value to force it even in light mode-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/SetupTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/selfie_with_id_card"/>
+
+    <TextView
+        style="@style/SetupSubtitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="center"
+        android:text="@string/selfie_with_id_card_info" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="4dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="24dp"
+        app:strokeColor="@color/orange_1"
+        android:orientation="vertical">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/viewFinder"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/capturedImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/captureButton"
+        android:layout_width="84dp"
+        android:layout_height="88dp"
+        app:cornerRadius="74dp"
+        android:background="@drawable/gradient_bg"
+        style="Widget.MaterialComponents.Button.OutlinedButton.Icon"/>
+
+    <LinearLayout
+        android:id="@+id/selfieBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="10"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/retakeButton"
+            android:text="@string/retake"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="5"
+            android:backgroundTint="@color/orange_2"
+            style="@style/UpayButtonStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitBtn"
+            android:text="@string/submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="5"
+            style="@style/UpayButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
