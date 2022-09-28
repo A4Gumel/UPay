@@ -65,4 +65,5 @@
     <string name="set_fingerprint_info_2">Please click on Continue to get started.</string>
     <string name="face_recognition">Face Recognition</string>
     <string name="face_recognition_info">Add Face Recognition to make your account more secured.</string>
+    <string name="verifying_your_face">Verifying your face</string>
 </resources>

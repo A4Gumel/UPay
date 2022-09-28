@@ -1,55 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
     android:orientation="vertical">
 
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
+        android:id="@+id/faceRecognitionTitle"
         style="@style/SetupTitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         android:text="@string/face_recognition"/>
 
     <TextView
+        android:id="@+id/faceRecognitionSubtitle"
         style="@style/SetupSubtitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/faceRecognitionTitle"
+        app:layout_constraintStart_toStartOf="@id/faceRecognitionTitle"
+        app:layout_constraintEnd_toEndOf="@id/faceRecognitionTitle"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
         android:gravity="center"
         android:text="@string/face_recognition_info" />
 
-
-    <!-- face scan image -->
-    <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/indicatorCard"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="2dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="48dp"
+        app:layout_constraintTop_toBottomOf="@id/faceRecognitionSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/orange_1"
+        android:orientation="vertical"/>
 
 
     <TextView
+        android:id="@+id/faceRecognitionSuccess"
+        style="@style/SetupTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/indicatorCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        tools:text="100%"/>
+
+    <TextView
+        android:id="@+id/faceRecognitionInfo"
         style="@style/SetupSubtitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/faceRecognitionSuccess"
+        app:layout_constraintStart_toStartOf="@id/faceRecognitionSuccess"
+        app:layout_constraintEnd_toEndOf="@id/faceRecognitionSuccess"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
         android:gravity="center"
-        android:text="@string/set_fingerprint_info_2" />
+        android:text="@string/verifying_your_face" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/faceRecognitionInfo"
+        app:layout_constraintStart_toStartOf="@id/faceRecognitionInfo"
+        app:layout_constraintEnd_toEndOf="@id/faceRecognitionInfo"
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
@@ -68,4 +117,4 @@
             style="@style/UpayButtonStyle"/>
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
