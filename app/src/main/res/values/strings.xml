@@ -60,4 +60,7 @@
     <string name="phone_number">Phone number</string>
     <string name="create_new_pin">Create New Pin</string>
     <string name="new_pin_info">Add a Pin to make your account more secured.</string>
+    <string name="set_your_fingerprint">Set Your Fingerprint</string>
+    <string name="set_fingerprint_info">Add a Fingerprint to make your account more secured.</string>
+    <string name="set_fingerprint_info_2">Please click on Continue to get started.</string>
 </resources>
