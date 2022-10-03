@@ -40,6 +40,7 @@
     <style name="OnBoardingTextStyle" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/textColor</item>
+        <item name="fontFamily">@font/urbanist_bold</item>
         <item name="android:gravity">center</item>
     </style>
 
