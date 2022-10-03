@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/orange_1"
+    app:cardCornerRadius="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/percentOff"
+                    style="@style/SetupTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxLength="4"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="30% off" />
+
+                <TextView
+                    android:id="@+id/promoName"
+                    style="@style/SetupTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    tools:text="SUMMER PROMO" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/percentOffBig"
+                    style="@style/SetupTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="3"
+                    android:textColor="@color/white"
+                    android:textSize="56sp"
+                    android:textStyle="bold"
+                    tools:text="30%" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/promoInfo"
+            style="@style/SetupTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/urbanist_regular"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            tools:text="Get Discount for every top up, transfer and payment" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
