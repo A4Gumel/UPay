@@ -29,6 +29,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/greetingText"
             style="@style/SetupSubtitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,6 +37,7 @@
             android:text="@string/good_morning" />
 
         <TextView
+            android:id="@+id/greetingUsername"
             style="@style/SetupTitleStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,6 +49,7 @@
 
     <!-- to use discount icon -->
     <ImageView
+        android:id="@+id/toolbarDiscount"
         android:layout_width="0dp"
         android:layout_weight="10"
         android:layout_height="wrap_content"
@@ -57,6 +60,7 @@
 
     <!-- to use notification icon -->
     <ImageView
+        android:id="@+id/toolbarNotification"
         android:layout_width="0dp"
         android:layout_weight="10"
         android:layout_height="wrap_content"
