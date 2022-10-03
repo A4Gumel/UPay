@@ -69,4 +69,7 @@
     <string name="good_morning">Good Morning🙌</string>
     <string name="dev_name">Auwal Abubakar</string>
     <string name="your_balance">Your Balance</string>
+    <string name="transfer">Transfer</string>
+    <string name="request">Request</string>
+    <string name="in_and_out"><![CDATA[In & Out]]></string>
 </resources>
