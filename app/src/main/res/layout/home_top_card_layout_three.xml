@@ -5,16 +5,17 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:orientation="vertical"
-    app:cardCornerRadius="16dp">
+    app:cardCornerRadius="24dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/orange_1"
-        android:backgroundTint="@color/orange_1"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:id="@+id/transferLayout"
@@ -29,13 +30,14 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/home_top_icons_bg"
                 android:orientation="vertical"
-                android:padding="8dp">
+                android:padding="12dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_email"
-                    android:contentDescription="@string/transfer" />
+                    android:contentDescription="@string/transfer"
+                    app:tint="@color/orange_1" />
 
             </LinearLayout>
 
@@ -46,7 +48,7 @@
                 android:fontFamily="@font/urbanist_regular"
                 android:gravity="center"
                 android:text="@string/transfer"
-                android:textColor="@color/white"
+                android:textColor="@color/orange_1"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -65,12 +67,13 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/home_top_icons_bg"
                 android:orientation="vertical"
-                android:padding="8dp">
+                android:padding="12dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_email"
+                    app:tint="@color/orange_1"
                     android:contentDescription="@string/request" />
 
             </LinearLayout>
@@ -82,7 +85,7 @@
                 android:fontFamily="@font/urbanist_regular"
                 android:gravity="center"
                 android:text="@string/request"
-                android:textColor="@color/white"
+                android:textColor="@color/orange_1"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -101,12 +104,13 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/home_top_icons_bg"
                 android:orientation="vertical"
-                android:padding="8dp">
+                android:padding="12dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_email"
+                    app:tint="@color/orange_1"
                     android:contentDescription="@string/in_and_out" />
 
             </LinearLayout>
@@ -118,7 +122,7 @@
                 android:fontFamily="@font/urbanist_regular"
                 android:gravity="center"
                 android:text="@string/in_and_out"
-                android:textColor="@color/white"
+                android:textColor="@color/orange_1"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
