@@ -76,7 +76,6 @@
     <string name="promo_and_discount"><![CDATA[Promo & Discount]]></string>
     <string name="notification">Notification</string>
     <string name="transfer_money">Transfer Money</string>
-<<<<<<< HEAD
     <string name="add_new_recipient">Add New Recipient</string>
     <string name="select_type">Select Type:</string>
     <string name="account_number">Account Number</string>
@@ -85,6 +84,8 @@
     <string name="date">Date</string>
     <string name="select_category">Select category</string>
     <string name="notes">Notes</string>
-=======
->>>>>>> e086fbf3045b21f291e8eb42cd9de58b8f6fb60f
+    <string name="amount">Amount (%s)</string>
+    <string name="name">Name</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="category">Category</string>
 </resources>
