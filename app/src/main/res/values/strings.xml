@@ -97,4 +97,5 @@
     <string name="electricity">Electricity</string>
     <string name="customer_id">Customer ID</string>
     <string name="confirm_payment">Confirm Payment</string>
+    <string name="all_services">All Services</string>
 </resources>
