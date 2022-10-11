@@ -66,4 +66,11 @@
     <string name="face_recognition">Face Recognition</string>
     <string name="face_recognition_info">Add Face Recognition to make your account more secured.</string>
     <string name="verifying_your_face">Verifying your face</string>
+    <string name="good_morning">Good Morning🙌</string>
+    <string name="dev_name">Auwal Abubakar</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="transfer">Transfer</string>
+    <string name="request">Request</string>
+    <string name="in_and_out"><![CDATA[In & Out]]></string>
+    <string name="see_all">See All</string>
 </resources>
