@@ -75,5 +75,27 @@
     <string name="see_all">See All</string>
     <string name="promo_and_discount"><![CDATA[Promo & Discount]]></string>
     <string name="notification">Notification</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="add_new_recipient">Add New Recipient</string>
+    <string name="select_type">Select Type:</string>
+    <string name="account_number">Account Number</string>
+    <string name="schedule">Schedule</string>
+    <string name="hours">Hours</string>
+    <string name="date">Date</string>
+    <string name="select_category">Select category</string>
+    <string name="notes">Notes</string>
+    <string name="amount">Amount (%s)</string>
+    <string name="bill">Bill (%s)</string>
+    <string name="name">Name</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="category">Category</string>
+    <string name="please_enter_your_pin">Please enter your PIN to confirm payment</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="status">Status</string>
+    <string name="completed">Completed</string>
+    <string name="electricity">Electricity</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="confirm_payment">Confirm Payment</string>
     <string name="all_services">All Services</string>
 </resources>

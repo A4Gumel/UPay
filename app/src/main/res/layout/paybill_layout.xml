@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/notificationAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/notificationToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            app:navigationIcon="@drawable/ic_back"
+            app:navigationIconTint="@color/textColor"
+            app:title="@string/electricity"
+            app:titleTextAppearance="@style/ToolbarTextAppearanceStyle">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/ic_email"
+                app:tint="@color/textColor" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/billImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/undraw_my_password"
+        app:civ_border_color="@android:color/background_dark"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/payBillTitle"
+        style="@style/SetupTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        tools:text="Pay Electricity Bill" />
+
+    <TextView
+        android:id="@+id/payBillSubtitle"
+        style="@style/SetupSubtitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        tools:text="Pay electricity bills safely, conveniently,&amp; easily \n
+ You can pay anytime and anywhere !" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.2"
+        android:background="@color/orange_1" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/undraw_my_password"
+                app:civ_border_color="@android:color/background_dark"
+                app:civ_border_width="1dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.2"
+                android:background="@color/orange_1" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/billWithCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="4dp"
+                        android:text="@string/bill"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/billTv"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="end"
+                        android:padding="4dp"
+                        android:text="@string/amount"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="4dp"
+                        android:text="@string/name"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="end"
+                        android:padding="4dp"
+                        android:text="@string/amount"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="4dp"
+                        android:text="@string/customer_id"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/customerIdTv"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="end"
+                        android:padding="4dp"
+                        android:text="@string/amount"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="4dp"
+                        android:text="@string/status"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/statusTv"
+                        android:layout_marginStart="120dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/completed_bg"
+                        android:text="@string/completed"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextBtn"
+        style="@style/UpayButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/confirm_payment" />
+
+</LinearLayout>
