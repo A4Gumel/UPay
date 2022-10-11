@@ -85,6 +85,7 @@
     <string name="select_category">Select category</string>
     <string name="notes">Notes</string>
     <string name="amount">Amount (%s)</string>
+    <string name="bill">Bill (%s)</string>
     <string name="name">Name</string>
     <string name="bank_account">Bank Account</string>
     <string name="category">Category</string>
@@ -93,4 +94,7 @@
     <string name="transaction_date">Transaction Date</string>
     <string name="status">Status</string>
     <string name="completed">Completed</string>
+    <string name="electricity">Electricity</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="confirm_payment">Confirm Payment</string>
 </resources>
