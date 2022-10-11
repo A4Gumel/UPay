@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/transferAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/transferToolbar"
+            android:layout_width="match_parent"
+            app:navigationIconTint="@color/textColor"
+            app:navigationIcon="@drawable/ic_back"
+            android:backgroundTint="@color/white"
+            app:title="@string/transfer_money"
+            app:titleTextAppearance="@style/ToolbarTextAppearanceStyle"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/search_hint"
+                app:startIconDrawable="@drawable/ic_email"
+                app:endIconDrawable="@drawable/ic_email"
+                app:endIconTint="@color/orange_1"
+                app:startIconTint="@color/orange_1"
+                android:textColorHint="@color/textColor"
+                style="@style/TextInputStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionSearch"
+                    android:drawableEnd="@drawable/ic_email"
+                    android:drawableTint="@color/orange_1"
+                    android:inputType="text"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/transferTabLayout"
+                android:layout_width="match_parent"
+                app:tabMode="fixed"
+                android:layout_height="wrap_content"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/transferViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
