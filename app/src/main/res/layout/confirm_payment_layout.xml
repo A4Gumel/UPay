@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -195,6 +194,52 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/urbanist_medium"
                         android:padding="4dp"
+                        android:text="@string/transaction_id"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/transactionIdTv"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="end"
+                        android:padding="4dp"
+                        android:text="@string/amount"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="4dp"
+                        android:text="@string/transaction_date"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/transactionDateTv"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="end"
+                        android:padding="4dp"
+                        android:text="@string/amount"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="4dp"
                         android:text="@string/notes"
                         android:textColor="@color/textColor" />
 
@@ -210,6 +255,32 @@
                         android:textColor="@color/textColor"
                         android:textStyle="bold" />
                 </TableRow>
+
+                <TableRow android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="4dp"
+                        android:text="@string/status"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/statusTv"
+                        android:layout_marginStart="120dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/completed_bg"
+                        android:text="@string/completed"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
 
 
             </TableLayout>
