@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:weightSum="10"
+    android:layout_gravity="fill_horizontal"
+    android:gravity="fill_horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/itemImg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_email"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        app:tint="@color/textColor" />
+
+    <TextView
+        android:id="@+id/itemName"
+        style="@style/SetupSubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/urbanist_medium"
+        tools:text="Language jsdfgdhgfhdgfgsdfeyfetyrfgdhsfhdgf" />
+
+    <TextView
+        android:id="@+id/itemInfo"
+        style="@style/SetupSubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/urbanist_medium"
+        tools:text="Language" />
+
+    <ImageView
+        android:id="@+id/itemNavigate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_email"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        app:tint="@color/textColor" />
+
+</LinearLayout>

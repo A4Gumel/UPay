@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SetupTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:text="@string/statistics_graph"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/filterChart"
+            android:layout_weight="1"
+            style="@style/SetupSubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/statistics_tv_bg"
+            tools:text="This Week"
+            android:padding="8dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:fontFamily="@font/urbanist_medium"
+            app:drawableEndCompat="@drawable/ic_email"
+            android:drawablePadding="4dp"
+            app:drawableTint="@color/orange_1" />
+
+
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/income_expense_layout"/>
+        <include layout="@layout/income_expense_layout"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:text="@string/transactions"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/seeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/urbanist_medium"
+            android:gravity="end"
+            android:text="@string/see_all"
+            android:layout_weight="1"
+            android:textColor="@color/orange_1"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/transactionsTabLayout"
+        android:layout_width="match_parent"
+        app:tabMode="fixed"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/transactionsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+</LinearLayout>

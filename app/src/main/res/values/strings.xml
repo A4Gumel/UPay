@@ -98,4 +98,10 @@
     <string name="customer_id">Customer ID</string>
     <string name="confirm_payment">Confirm Payment</string>
     <string name="all_services">All Services</string>
+    <string name="profile">Profile</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="statistics_graph">Statistics Graph</string>
+    <string name="transactions">Transactions</string>
+    <string name="scan_and_pay">Scan and Pay</string>
+    <string name="camera_qr_code_info">Please point the camera at the QR Code</string>
 </resources>
