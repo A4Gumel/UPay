@@ -100,4 +100,5 @@
     <string name="all_services">All Services</string>
     <string name="profile">Profile</string>
     <string name="all_transactions">All Transactions</string>
+    <string name="statistics_graph">Statistics Graph</string>
 </resources>

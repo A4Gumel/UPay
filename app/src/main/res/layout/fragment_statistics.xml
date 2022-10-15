@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SetupTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:text="@string/statistics_graph"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/filterChart"
+            android:layout_weight="1"
+            style="@style/SetupSubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/statistics_tv_bg"
+            tools:text="This Week"
+            android:padding="8dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:fontFamily="@font/urbanist_medium"
+            app:drawableEndCompat="@drawable/ic_email"
+            android:drawablePadding="4dp"
+            app:drawableTint="@color/orange_1" />
+
+
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+
+</LinearLayout>
