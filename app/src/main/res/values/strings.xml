@@ -104,4 +104,8 @@
     <string name="transactions">Transactions</string>
     <string name="scan_and_pay">Scan and Pay</string>
     <string name="camera_qr_code_info">Please point the camera at the QR Code</string>
+    <string name="home">Home</string>
+    <string name="statistics">Statistics</string>
+    <string name="scan">Scan</string>
+    <string name="u_card">U-Card</string>
 </resources>
