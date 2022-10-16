@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.a4gumel.upay.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_placeholder"
+            app:destination="@id/placeholder" />
+        <action
+            android:id="@+id/action_homeFragment_to_allServicesFragment"
+            app:destination="@id/allServicesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allTransactionFragment"
+            app:destination="@id/allTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.a4gumel.upay.fragments.OnBoardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_accountSetupFragment"
+            app:destination="@id/accountSetupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSetupFragment"
+        android:name="com.a4gumel.upay.fragments.AccountSetupFragment"
+        android:label="AccountSetupFragment" >
+        <action
+            android:id="@+id/action_accountSetupFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment android:id="@+id/placeholder" >
+        <action
+            android:id="@+id/action_placeholder_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allServicesFragment"
+        android:name="com.a4gumel.upay.fragments.AllServicesFragment"
+        android:label="AllServicesFragment" >
+        <action
+            android:id="@+id/action_allServicesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTransactionFragment"
+        android:name="com.a4gumel.upay.fragments.AllTransactionFragment"
+        android:label="AllTransactionFragment" >
+        <action
+            android:id="@+id/action_allTransactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
