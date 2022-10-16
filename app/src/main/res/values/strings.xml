@@ -108,7 +108,8 @@
     <string name="statistics">Statistics</string>
     <string name="scan">Scan</string>
     <string name="u_card">U-Card</string>
-    <string name="slider_heading_1">Have an amazing experience with UPay right now!</string>
-    <string name="slider_heading_2">The best app for finance, banking and e-wallet today</string>
-    <string name="slider_heading_3">Manage finances easily with secure payments</string>
+    <string name="on_boarding_heading_1">Have an amazing experience with UPay right now!</string>
+    <string name="on_boarding_heading_2">The best app for finance, banking and e-wallet today</string>
+    <string name="on_boarding_heading_3">Manage finances easily with secure payments</string>
+    <string name="get_started">Get Started</string>
 </resources>

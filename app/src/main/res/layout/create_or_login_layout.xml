@@ -14,7 +14,7 @@
         tools:text="Create your\nAccount"
         android:gravity="start"
         android:layout_marginBottom="48dp"
-        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_spacing"
         style="@style/OnBoardingTextStyle"/>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -117,7 +117,7 @@
             android:layout_height="1dp"
             android:alpha="0.6"
             android:background="@color/textColor"
-            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_spacing"
             android:backgroundTint="@color/textColor"/>
 
         <TextView
@@ -129,7 +129,7 @@
         <View
             android:layout_width="160dp"
             android:layout_height="1dp"
-            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_spacing"
             android:alpha="0.6"
             android:background="@color/textColor"
             android:backgroundTint="@color/textColor"/>
@@ -141,7 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_spacing"
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton

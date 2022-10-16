@@ -13,7 +13,7 @@
         android:weightSum="100"
         tools:context=".fragments.OnBoardingFragment">
 
-        <androidx.viewpager.widget.ViewPager
+        <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/introPager"
             android:layout_width="match_parent"
             android:layout_weight="96"
@@ -25,7 +25,10 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_weight="1"
-            android:layout_marginTop="@dimen/small_margin"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/small_spacing"
             android:layout_height="wrap_content" />
 
         <com.google.android.material.button.MaterialButton

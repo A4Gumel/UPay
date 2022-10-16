@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.a4gumel.upay.R;
 import com.a4gumel.upay.activity.MainActivity;
+import com.a4gumel.upay.databinding.ActivityMainBinding;
 import com.a4gumel.upay.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -24,6 +25,11 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
+
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override

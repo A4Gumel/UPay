@@ -14,6 +14,12 @@
         tools:context=".activity.MainActivity">
 
 
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
@@ -63,4 +69,5 @@
             android:contentDescription="@string/scan_and_pay" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </layout>

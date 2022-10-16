@@ -21,7 +21,7 @@
         android:id="@+id/balanceAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_spacing"
         tools:text="$ 8989"
         android:textSize="48sp"
         android:textColor="@color/white"
