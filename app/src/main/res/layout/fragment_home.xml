@@ -1,90 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/homeAppBar"
+    <data>
+
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        app:liftOnScroll="true">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/homeToolbar"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/homeAppBar"
             android:layout_width="match_parent"
-            app:navigationIconTint="@color/textColor"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:liftOnScroll="true">
 
-            <include layout="@layout/home_toolbar_item"/>
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/homeToolbar"
+                android:layout_width="match_parent"
+                app:navigationIconTint="@color/textColor"
+                android:layout_height="match_parent">
 
-        </com.google.android.material.appbar.MaterialToolbar>
+                <include layout="@layout/home_toolbar_item" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        </com.google.android.material.appbar.AppBarLayout>
 
-        <LinearLayout
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:orientation="vertical"
             android:layout_height="wrap_content">
-
-            <include layout="@layout/home_top_card_layout"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="2"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/urbanist_medium"
-                    android:gravity="start"
-                    android:layout_weight="1"
-                    android:text="@string/request"
-                    android:textColor="@color/textColor"
-                    android:textSize="16sp"/>
+                <include layout="@layout/home_top_card_layout" />
 
-                <TextView
-                    android:id="@+id/seeAll"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/urbanist_medium"
-                    android:gravity="end"
-                    android:text="@string/see_all"
-                    android:layout_weight="1"
-                    android:textColor="@color/orange_1"
+                    android:weightSum="2"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginStart="16dp"
-                    android:textSize="16sp"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:text="@string/request"
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/seeAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:gravity="end"
+                        android:text="@string/see_all"
+                        android:layout_weight="1"
+                        android:textColor="@color/orange_1"
+                        android:layout_marginStart="16dp"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/servicesRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="4"
+                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                    android:layout_marginTop="8dp"
+                    tools:listitem="@layout/services_rv_layout" />
 
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/servicesRV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:itemCount="4"
-                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-                android:layout_marginTop="8dp"
-                tools:listitem="@layout/services_rv_layout"/>
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
 
-
-
-
-</LinearLayout>
+    </LinearLayout>
+</layout>

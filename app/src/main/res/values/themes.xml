@@ -32,7 +32,7 @@
         <item name="backgroundTint">@color/orange_1</item>
         <item name="android:layout_margin">16dp</item>
         <item name="android:textStyle">bold</item>
-        <item name="fontFamily">@font/urbanist_regular</item>
+        <item name="fontFamily">@font/urbanist_medium</item>
         <item name="textAllCaps">false</item>
         <item name="android:backgroundTint">@color/orange_1</item>
     </style>
@@ -40,7 +40,7 @@
     <style name="OnBoardingTextStyle" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/textColor</item>
-        <item name="fontFamily">@font/urbanist_bold</item>
+        <item name="fontFamily">@font/urbanist_medium</item>
         <item name="android:gravity">center</item>
     </style>
 

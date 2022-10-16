@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.a4gumel.upay.fragments.HomeFragment"
-        android:label="HomeFragment" >
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_placeholder"
             app:destination="@id/placeholder" />
@@ -18,6 +19,9 @@
         <action
             android:id="@+id/action_homeFragment_to_allTransactionFragment"
             app:destination="@id/allTransactionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
     </fragment>
     <fragment
         android:id="@+id/onBoardingFragment"
