@@ -1,131 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
-    android:orientation="vertical">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="48dp"
-        android:contentDescription="@string/access_account"
-        android:src="@drawable/undraw_access_account" />
+    <data>
 
-    <TextView
-        style="@style/OnBoardingTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/default_spacing"
-        android:text="@string/let_you_in" />
+    </data>
 
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/small_spacing"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
         android:orientation="vertical">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/facebookLogin"
-            style="@style/SocialMediaLoginStyle"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="@string/continue_with_facebook"
-            android:textSize="12sp"
-            app:icon="@drawable/facebook_logo"
-            app:iconTint="@android:color/holo_blue_dark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/googleLogin"
-            style="@style/SocialMediaLoginStyle"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="@string/continue_with_google"
-            android:textSize="12sp"
-            app:icon="@drawable/google_logo"
-            app:iconTint="@android:color/transparent"
-            app:iconTintMode="add" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/access_account"
+                android:src="@drawable/undraw_access_account" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/twitterLogin"
-            style="@style/SocialMediaLoginStyle"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:text="@string/continue_with_twitter"
-            android:textSize="12sp"
-            app:icon="@drawable/twitter_logo"
-            app:iconTint="@android:color/transparent"
-            app:iconTintMode="add" />
+            <TextView
+                style="@style/OnBoardingTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/default_spacing"
+                android:text="@string/let_you_in" />
 
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/small_spacing"
+                android:orientation="vertical"
+                app:singleSelection="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="24dp"
-        android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/facebookLogin"
+                    style="@style/SocialMediaLoginStyle"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_with_facebook"
+                    android:textSize="12sp"
+                    app:icon="@drawable/facebook_logo"
+                    app:iconTint="@android:color/holo_blue_dark" />
 
-        <View
-            android:layout_width="160dp"
-            android:layout_height="1dp"
-            android:alpha="0.6"
-            android:background="@color/textColor"
-            android:layout_marginEnd="@dimen/small_spacing"
-            android:backgroundTint="@color/textColor"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/googleLogin"
+                    style="@style/SocialMediaLoginStyle"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_with_google"
+                    android:textSize="12sp"
+                    app:icon="@drawable/google_logo"
+                    app:iconTint="@android:color/transparent"
+                    app:iconTintMode="add" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/textColor"
-            android:text="@string/or"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/twitterLogin"
+                    style="@style/SocialMediaLoginStyle"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_with_twitter"
+                    android:textSize="12sp"
+                    app:icon="@drawable/twitter_logo"
+                    app:iconTint="@android:color/transparent"
+                    app:iconTintMode="add" />
 
-        <View
-            android:layout_width="160dp"
-            android:layout_height="1dp"
-            android:layout_marginStart="@dimen/small_spacing"
-            android:alpha="0.6"
-            android:background="@color/textColor"
-            android:backgroundTint="@color/textColor"/>
-    </LinearLayout>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/nextBtn"
-        android:text="@string/sign_in_with_email"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        style="@style/UpayButtonStyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/signUpLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="8dp"
-        android:orientation="horizontal">
+                <View
+                    android:layout_width="160dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/small_spacing"
+                    android:alpha="0.6"
+                    android:background="@color/textColor"
+                    android:backgroundTint="@color/textColor" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/textColor"
-            android:layout_marginEnd="2dp"
-            android:alpha=".9"
-            android:text="@string/don_t_have_an_account"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or"
+                    android:textColor="@color/textColor" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/orange_1"
-            android:layout_marginStart="4dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:text="@string/sign_up"/>
-    </LinearLayout>
+                <View
+                    android:layout_width="160dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/small_spacing"
+                    android:alpha="0.6"
+                    android:background="@color/textColor"
+                    android:backgroundTint="@color/textColor" />
+            </LinearLayout>
 
-</LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextBtn"
+                style="@style/UpayButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/sign_in_with_email" />
+
+            <LinearLayout
+                android:id="@+id/signUpLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:alpha=".9"
+                    android:fontFamily="@font/urbanist_regular"
+                    android:text="@string/don_t_have_an_account"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/sign_up"
+                    android:fontFamily="@font/urbanist_medium"
+                    android:textColor="@color/orange_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

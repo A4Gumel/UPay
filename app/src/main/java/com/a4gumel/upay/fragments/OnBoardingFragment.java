@@ -1,5 +1,6 @@
 package com.a4gumel.upay.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.a4gumel.upay.R;
+import com.a4gumel.upay.activity.IMainActivity;
+import com.a4gumel.upay.activity.MainActivity;
 import com.a4gumel.upay.adapter.OnBoardingAdapter;
 import com.a4gumel.upay.databinding.FragmentOnboardingBinding;
 import com.a4gumel.upay.models.OnBoardingItem;
@@ -26,6 +29,7 @@ public class OnBoardingFragment extends Fragment {
 
     private FragmentOnboardingBinding onBoardingBinding;
     private OnBoardingAdapter onBoardingAdapter;
+    private IMainActivity iMainActivity;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,7 +72,7 @@ public class OnBoardingFragment extends Fragment {
 
             } else {
 
-                // TODO: set home fragment or account
+                iMainActivity.navigateToAccount();
 
             }
         });
@@ -147,5 +151,11 @@ public class OnBoardingFragment extends Fragment {
 
         }
 
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        iMainActivity = (MainActivity) getActivity();
     }
 }

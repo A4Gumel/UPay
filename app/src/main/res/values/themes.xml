@@ -33,6 +33,7 @@
         <item name="android:layout_margin">16dp</item>
         <item name="android:textStyle">bold</item>
         <item name="fontFamily">@font/urbanist_medium</item>
+        <item name="android:fontFamily">@font/urbanist_medium</item>
         <item name="textAllCaps">false</item>
         <item name="android:backgroundTint">@color/orange_1</item>
     </style>
@@ -43,12 +44,15 @@
         <item name="fontFamily">@font/urbanist_medium</item>
         <item name="android:textSize">30sp</item>
         <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/urbanist_medium</item>
     </style>
 
     <style name="SocialMediaLoginStyle" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textStyle">bold</item>
         <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/urbanist_medium</item>
+        <item name="android:fontFamily">@font/urbanist_medium</item>
         <item name="cornerRadius">8dp</item>
     </style>
 
@@ -63,6 +67,7 @@
         <item name="colorControlNormal">@color/yellow2</item>
         <item name="backgroundColor">@color/yellow2</item>
         <item name="backgroundTint">@color/yellow2</item>
+        <item name="android:fontFamily">@font/urbanist_medium</item>
         <item name="fontFamily">@font/urbanist_medium</item>
     </style>
 
@@ -79,17 +84,20 @@
         <item name="fontFamily">@font/urbanist_medium</item>
         <item name="android:textSize">28sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/urbanist_medium</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="SetupSubtitleStyle" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="fontFamily">@font/urbanist_regular</item>
         <item name="android:textColor">@color/textColor</item>
+        <item name="android:fontFamily">@font/urbanist_regular</item>
     </style>
 
     <style name="ToolbarTextAppearanceStyle" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="fontFamily">@font/urbanist_regular</item>
         <item name="android:textColor">@color/textColor</item>
+        <item name="android:fontFamily">@font/urbanist_regular</item>
     </style>
 
 </resources>

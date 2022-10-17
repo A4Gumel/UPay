@@ -18,12 +18,14 @@
             android:id="@+id/accountToolbar"
             android:layout_width="match_parent"
             app:navigationIconTint="@color/textColor"
-            app:navigationIcon="@drawable/ic_back"
             android:backgroundTint="@color/white"
             android:layout_height="match_parent"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-<!--    Include other layout here-->
+
+    <include layout="@layout/let_you_in_layout"/>
+
+    <include layout="@layout/create_or_login_layout"/>
 
 </LinearLayout>
