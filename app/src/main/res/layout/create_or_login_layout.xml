@@ -175,7 +175,8 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="8dp"
                         android:src="@drawable/facebook_logo"
-                        app:iconTint="@android:color/holo_blue_dark" />
+                        app:iconTint="@android:color/holo_blue_dark"
+                        android:contentDescription="@string/continue_with_facebook" />
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -199,7 +200,8 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/google_logo" />
+                        android:src="@drawable/google_logo"
+                        android:contentDescription="@string/continue_with_google" />
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -223,7 +225,8 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/twitter_logo" />
+                        android:src="@drawable/twitter_logo"
+                        android:contentDescription="@string/continue_with_twitter" />
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -236,6 +239,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
+                android:layout_marginTop="8dp"
                 android:padding="8dp">
 
                 <TextView
@@ -265,6 +269,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
+                android:layout_marginTop="8dp"
                 android:padding="8dp">
 
                 <TextView
