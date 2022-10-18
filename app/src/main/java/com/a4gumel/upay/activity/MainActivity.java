@@ -3,6 +3,7 @@ package com.a4gumel.upay.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements IMainActivity{
         mainBinding.fragmentContainer.setVisibility(View.GONE);
         mainBinding.scanFab.setVisibility(View.VISIBLE);
         mainBinding.bottomAppBar.setVisibility(View.VISIBLE);
+        mainBinding.navHostFragment.setVisibility(View.VISIBLE);
     }
 
     @Override

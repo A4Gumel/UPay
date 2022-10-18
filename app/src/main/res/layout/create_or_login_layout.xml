@@ -100,7 +100,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.checkbox.MaterialCheckBox
+            <CheckBox
                 android:id="@+id/rememberMe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                 style="@style/UpayButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                tools:text="@string/sign_up" />
+                android:text="@string/sign_up"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -158,25 +158,28 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/facebookLogin"
                     android:layout_width="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginStart="4dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="0dp"
                     app:strokeColor="@android:color/darker_gray"
-                    app:strokeWidth="1dp">
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    app:rippleColor="@color/orange_2"
+                    android:focusable="true">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginEnd="24dp"
                         android:layout_marginBottom="8dp"
+                        android:contentDescription="@string/continue_with_facebook"
                         android:src="@drawable/facebook_logo"
-                        app:iconTint="@android:color/holo_blue_dark"
-                        android:contentDescription="@string/continue_with_facebook" />
+                        app:iconTint="@android:color/holo_blue_dark" />
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -185,23 +188,26 @@
                     android:id="@+id/googleLogin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
                     android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
                     android:backgroundTint="@color/white"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="0dp"
                     app:strokeColor="@android:color/darker_gray"
-                    app:strokeWidth="1dp">
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    app:rippleColor="@color/orange_2"
+                    android:focusable="true">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginEnd="24dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/google_logo"
-                        android:contentDescription="@string/continue_with_google" />
+                        android:contentDescription="@string/continue_with_google"
+                        android:src="@drawable/google_logo" />
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -210,23 +216,26 @@
                     android:id="@+id/twitterLogin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:layout_marginEnd="4dp"
                     android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="0dp"
                     app:strokeColor="@android:color/darker_gray"
-                    app:strokeWidth="1dp">
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    app:rippleColor="@color/orange_2"
+                    android:focusable="true">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginEnd="24dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/twitter_logo"
-                        android:contentDescription="@string/continue_with_twitter" />
+                        android:contentDescription="@string/continue_with_twitter"
+                        android:src="@drawable/twitter_logo" />
 
 
                 </com.google.android.material.card.MaterialCardView>
@@ -238,8 +247,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="horizontal"
                 android:layout_marginTop="8dp"
+                android:orientation="horizontal"
                 android:padding="8dp">
 
                 <TextView
@@ -268,8 +277,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="horizontal"
                 android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
                 android:padding="8dp">
 
                 <TextView

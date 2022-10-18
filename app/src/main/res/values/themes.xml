@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" >@color/orange_2</item>
         <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">@color/orange_2</item>
 
     </style>
 

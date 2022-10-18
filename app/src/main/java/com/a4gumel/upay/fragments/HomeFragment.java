@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -29,8 +30,11 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+//        homeBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_home, container, false);
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -39,7 +43,5 @@ public class HomeFragment extends Fragment {
         homeBinding = FragmentHomeBinding.bind(view);
         Activity activity = new Activity();
         NavController navController = Navigation.findNavController(view);
-
-        navController.navigate(HomeFragmentDirections.actionHomeFragmentToOnBoardingFragment());
     }
 }
